@@ -1,0 +1,25 @@
+1. Obtener el DNI de todos los votantes que tengan dos 6s en su tel�fono pero contemplar que no tienen m�s de tres
+
+2. Obtener el DNI de todos los votantes que tengan tres 6s en su tel�fono pero contemplar que no tienen m�s de tres, dos de ellos deben estar juntos
+
+3. Mostrar aquella localidad cuyo n�mero de habitantes acaba igual que su n�mero de provincia, mostrando tambi�n el nombre de la provincia a la que pertenece
+
+4. Mostrar el nombre completo de los votantes cuyo tel�fono acaba igual que su dni
+
+5. Mostrar el nombre completo de aquellos votantes que contienen al menos una 'S' y cuya fecha de nacimiento es anterior al 12 de Febrero de 1990.
+
+6. Usar el operador DISTINCT (http://www.w3schools.com/sql/sql_distinct.asp). Obtener todos los votantes que han participado en alguna consulta. Dichos votantes deben aparecer en orden decreciente de dni
+
+7. Mostrar el dni de aquellos votantes que han participado en m�s de tres consultas 
+
+8. Mostrar el nombre completo de los votantes que han participado en m�s de tres consultas y especificar en cu�ntas consultas participaron  (en orden creciente)
+
+9. Obtener el nombre de los votantes y el nombre de su localidad para aquellos votantes que han sido consultados en una localidad que tiene m�s de 300000 habitantes
+
+10. Mostrar el nombre de cada partido pol�tico y la m�xima certidumbre que tiene para sus consultas
+
+11. Mostrar el nombre del votante y su certidumbre media en todas las consultas en las que ha respondido de manera afirmativa
+
+12. Mostrar el nombre del votante y su certidumbre media en todas las consultas en las que ha respondido de manera afirmativa �NICAMENTE para aquellos votantes cuyo certidumbre media est� entre 0'5 y 0'8.
+
+13. Mostrar el nombre de los partidos y la certidumbre media obtenida para cada partido considerando s�lo aquellas consultas en las que el encuestado ha contestado negativamente a votar a dicho partido y con una certidumbre significativa (por encima del 60%)
