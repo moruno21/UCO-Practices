@@ -1,2 +1,3 @@
 # ssoo
-Operative Systems Programs (process, threads, mutex...)
+
+Sistemas Operativos (process, threads, mutex...)

@@ -1,2 +1,3 @@
 # bbdd
-Databases Exercises with SQL
+
+Bases Datos Exercises with SQL
