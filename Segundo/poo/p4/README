@@ -1,0 +1,12 @@
+CARPETA CONTADOR ->     CLASE CONTADOR
+
+Añado también la otra parte de la practica de forma adicional
+
+CARPETA RULETA_MENU ->  EJ 5 Y 6 DE LA PRACTICA
+
+                        EN RULETA_UNITTEST HE AÑADIDO TESTS PARA LAS 
+                        FUNCIONES QUE HAY QUE IMPLEMENTAR EN ESTA PRACTICA
+
+                        Los ficheros 44XX.txt, 55XX.txt y jugadores.txt estan
+                        incluidos ya que son necesarios para que funcione el menu
+                        ruleta_menu.cc
