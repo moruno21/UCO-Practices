@@ -1,0 +1,28 @@
+Is it empty? Y
+Inserting 1
+Inserting 2
+Going to next.
+Inserting 3
+Going to next.
+Inserting 4
+Going to next.
+Inserting 5
+Going to next.
+Inserting 6
+Going to next.
+Current item: 6
+Folding: [ 1 2 3 4 5 6 ]
+Going to head.
+Current item: 1
+Removing 1
+Folding: [ 2 3 4 5 6 ]
+Removing 2
+Folding: [ 3 4 5 6 ]
+Removing 3
+Folding: [ 4 5 6 ]
+Removing 4
+Folding: [ 5 6 ]
+Removing 5
+Folding: [ 6 ]
+Removing 6
+Is it empty? Y

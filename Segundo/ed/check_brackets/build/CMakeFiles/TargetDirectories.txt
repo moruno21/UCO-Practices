@@ -1,0 +1,5 @@
+/home/moruno21/Desktop/UCO-Practices/Segundo/ed/check_brackets/build/CMakeFiles/rebuild_cache.dir
+/home/moruno21/Desktop/UCO-Practices/Segundo/ed/check_brackets/build/CMakeFiles/edit_cache.dir
+/home/moruno21/Desktop/UCO-Practices/Segundo/ed/check_brackets/build/CMakeFiles/test_check_brackets.dir
+/home/moruno21/Desktop/UCO-Practices/Segundo/ed/check_brackets/build/CMakeFiles/test_stack.dir
+/home/moruno21/Desktop/UCO-Practices/Segundo/ed/check_brackets/build/CMakeFiles/test_slist.dir

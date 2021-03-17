@@ -1,0 +1,14 @@
+Is it empty? Y
+Inserting 1
+Inserting 2
+Going to next.
+Inserting 3
+Going to next.
+Inserting 4
+Going to next.
+Folding: [ 1 2 3 4 ]
+Finding value 3?: Y
+Removing 3
+Current item: 4
+Has next? : N
+Folding: [ 1 2 4 ]

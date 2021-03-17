@@ -1,0 +1,25 @@
+Is it empty? Y
+Inserting 1
+Has next? : N
+Inserting 2
+Has next? : Y
+Next item: 2
+Going to next.
+Has next? : N
+Inserting 3
+Going to next.
+Inserting 4
+Going to next.
+Folding: [ 1 2 3 4 ]
+Has it 0?: N
+Removing 4
+Current item: 3
+Folding: [ 1 2 3 ]
+Removing 3
+Current item: 2
+Folding: [ 1 2 ]
+Removing 2
+Current item: 1
+Folding: [ 1 ]
+Removing 1
+Is it empty? Y

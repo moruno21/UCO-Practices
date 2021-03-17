@@ -1,0 +1,12 @@
+Is it empty?: Y
+Pushing 1
+Pushing 2
+Pushing 3
+Is it empty?: N
+Top is: 3
+Popping
+Top is: 2
+Popping
+Top is: 1
+Popping
+Is it empty?: Y

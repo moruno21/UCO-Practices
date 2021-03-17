@@ -1,0 +1,19 @@
+Is it empty? Y
+Inserting 1
+Is it empty? N
+Current item: 1
+Inserting 2
+Inserting 3
+Inserting 4
+Folding: [ 1 4 3 2 ]
+Has it 0?: N
+Removing 1
+Current item: 4
+Folding: [ 4 3 2 ]
+Has it 4?: Y
+Removing 4
+Folding: [ 3 2 ]
+Removing 3
+Folding: [ 2 ]
+Removing 2
+Is it empty? Y

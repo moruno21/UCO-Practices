@@ -1,0 +1,17 @@
+Is it empty? Y
+Inserting front 0
+Is it empty? N
+Head item: 0
+Inserting front 1
+Inserting front 2
+Inserting front 3
+Folding: [ 3 2 1 0 ]
+Has it 0?: Y
+Removing front 3
+Head item: 2
+Folding: [ 2 1 0 ]
+Has it 3?: N
+Removing front 2
+Removing front 1
+Removing front 0
+Is it empty? Y
