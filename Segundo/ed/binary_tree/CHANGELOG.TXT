@@ -1,0 +1,14 @@
+1.0
+- Primer versión.
+1.1
+- tests_btree: corregido test 10 y añadido nuevo test 11.
+1.2
+- Corregido error tests de recorrido usando la búsqueda de un valor.
+  Al usar una sola expresión std::cout << para 
+  ejecutar el recorrido e imprimir el valor "count", dependiendo de la versión
+  del compilador, puede evaluarse "count" antes de ejecutar el recorrido y por lo
+  tanto el valor que sale es el valor inicial de 0. Se corrige separando en dos
+  expresiones std::cout <<, la primera hace el recorrido y la segunda imprime el
+  valor count modificado por la función lambda.
+
+
