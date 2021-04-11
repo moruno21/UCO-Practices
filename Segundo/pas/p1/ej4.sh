@@ -1,147 +1,61 @@
-#Menu para personalizar el prompt
-#Ejemplo de ejecución: ./ej4.sh
+#Script que abre un menu para poder personalizar el prompt 
+
 
 #!/bin/bash
-
-menu(){
-    echo "=== Personalización del prompt"
-    echo "Selecciona la opcion a añadir"
-    echo "1. Nombre de usuario"
-    echo "2. Nombre de host"
-    echo "3. Ruta completa"
-    echo "4. Última parte de la ruta"
-    echo "5. Hora"
-    echo "6. Fecha"
-    echo "7. Cadena literal"
-    echo "8. Añadir color y estilo"
-    echo "9. Cancelar"
-    echo "0. Confirmar"
-    read opcion  
-}
-
-datos=""
-menu
-while [ $opcion -ne 9 ]
+opcion=1
+while [ $opcion -ne 0 ] 			#hacemos un bucle para el menu
 do
-    case $opcion in
-        1)
-            datos=$datos"\u"
-            ;;
-        2)
-            datos=$datos"@\h"
-            ;;
-        3)
-            datos=$datos"\w"
-            ;;
-        4)
-            datos=$datos"\W"
-            ;;
-        5)
-            datos=$datos"\A"
-            ;;
-        6)
-            datos=$datos"\d"
-            ;;
-        7)
-            read cadena
-            datos=$datos" $cadena"
-            ;;
-        8)
-            echo "- Tipo de fuente -"
-            echo "1. Normal"
-            echo "2. Negrita"
-            echo "3. Subrayado"
-            read opcionfuente
+	echo "Seleccione un opcion" 
+	echo "1.Nombre usuario"
+	echo "2.Nombre del host"
+	echo "3.Ruta completa"
+	echo "4.Ultima parte de la ruta"
+	echo "5.Hora"
+	echo "6.Fecha"
+	echo "7.Cadena literal"
+	echo "8.Confimar"
+	echo "0.Salir"
 
-            echo "- Color de fuente -"
-            echo "1. Negro"
-            echo "2. Rojo"
-            echo "3. Verde"
-            echo "4. Amarillo"
-            echo "5. Azul"
-            echo "6. Blanco"
-            read opcioncolor
+	read opcion # lee por terminal y lo guarda en la variable opcion
 
-            echo "- Color de fondo -"
-            echo "1. Negro"
-            echo "2. Rojo"
-            echo "3. Verde"
-            echo "4. Amarillo"
-            echo "5. Azul"
-            echo "6. Blanco"
-            read opcionfondo
+	case $opcion in
 
-            datos=$datos"\e[" #ponemos el \e[ para iniciar la edicion del formato
+		1)	export var="\u";; #vamos guardando las opciones (concatenandolas)
+		2)	export var="\h";;
+		3)	export var="\w";;
+		4)	export var="\W";;
+		5)	export var="\t";;
+		6)	export var="\d";;
+		7)	read var;;
+		8)	PROMPT_COMMAND="PS1='$PS1'; unset PROMPT_COMMAND" bash;; # ejecutamos lo que llevamos
 
-            #primero el tipo de fuente
-            if [ $opcionfuente -eq 1 ]
-            then
-                datos=$datos"0"
-            elif [ $opcionfuente -eq 2 ]
-            then
-                datos=$datos"1"
-            else
-                datos=$datos"4"
-            fi
+		#esac (case al reves) como if y fi, es lo que se ejecuta al elegir una opcion del case
+	esac
+		PS1="$PS1$var"		#como al elegir un numero hacemos export var, vamos concatenando lo que tiene var a cada vez en PS1
+		echo "PROMT ACTUAL: $PS1"
+done
 
-            #punto y coma
-            datos=$datos";"
+#COMANDOS DEL PS1
 
-            #color del texto
-            if [ $opcioncolor -eq 1 ]
-            then
-                datos=$datos"30"
-            elif [ $opcioncolor -eq 2 ]
-            then
-                datos=$datos"31"
-            elif [ $opcioncolor -eq 3 ]
-            then
-                datos=$datos"32"
-            elif [ $opcioncolor -eq 4 ]
-            then
-                datos=$datos"33"
-            elif [ $opcioncolor -eq 5 ]
-            then
-                datos=$datos"34"
-            else
-                datos=$datos"37"
-            fi
-
-            #punto y coma
-            datos=$datos";"
-
-            #color de fondo
-            if [ $opcionfondo -eq 1 ]
-            then
-                datos=$datos"40m"
-            elif [ $opcionfondo -eq 2 ]
-            then
-                datos=$datos"41m"
-            elif [ $opcionfondo -eq 3 ]
-            then
-                datos=$datos"42m"
-            elif [ $opcionfondo -eq 4 ]
-            then
-                datos=$datos"43m"
-            elif [ $opcionfondo -eq 5 ]
-            then
-                datos=$datos"44m"
-            else
-                datos=$datos"47m"
-            fi
-
-            ;;
-
-        0)
-            PROMPT_COMMAND="PS1='$datos';unset PROMPT_COMMAND" bash
-            exit 1
-            ;;
-        *)
-            echo "Opción no válida, inténtelo de nuevo"
-            ;;
-    esac
-    echo "PROMPT ACTUAL: $datos"
-    menu
-done   
-
-        
+#    \a un caracter ASCII de ring
+#     \d la fecha actual en formato "dia_sem mes día", "dom nov 18"
+#     \e un caracter ASCII de escape
+#     \h el nombre del equipo hasta el primer ., ejemplo linuxtotal de linuxtotal.com.mx
+#     \H el nombre del equipo
+#     \n nueva línea
+#     \r retorno de carro, enter
+#     \s el nombre del shell
+#     \t el tiempo actual en formato de 24 horas HH:MM:SS
+#     \T el tiempo actual en formato de 12 horas HH:MM:SS
+#     \@ el tiempo actual en formaro de 12 horas con am/pm
+#     \u el usuario actual
+#     \v la version de bash
+#     \V el número de release de batch, versión + parche
+#     \w el directorio de trabajo actual, path
+#     \W el nombre del directorio actual
+#     \! el número en el historial del comando
+#     \# el número de comando de este comando
+#     \$ si el usuario es root (UID=0) se indica un '#', un usuario normal '$'
+#     \\ diagonal
+#     \[ inicio de una secuencia de caracteres no imprimibles
+#     \] fin de la secuencia de caracteres no imprimibles
