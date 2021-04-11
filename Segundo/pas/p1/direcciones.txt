@@ -1,0 +1,8 @@
+localhost
+uco.es
+moodle.uco.es
+google.com
+google.es
+twitter.com
+facebook.com
+stackoverflow.com
