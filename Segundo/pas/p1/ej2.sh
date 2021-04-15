@@ -8,7 +8,7 @@ if [ -d $1 ] && [ $2 -gt 0 ] #1 debe ser un directorio y 2 debe ser > 0
 then
 	echo "Formato de entrada correcto"
 
-	for a in $(ls $1) #Contamos el numero de archivos que hay en la carpeta
+	for a in $(find $1) #Contamos el numero de archivos que hay en la carpeta
 	do
 		if [ -f $a ] #Comprobamos que a sea un fichero
 		then
@@ -48,7 +48,7 @@ do
 done
 
 x=1 #Variable que usaremos para copiar los archivos a los grupos
-for b in $(ls $1)
+for b in $(find $1)
 do
 	if [ -f $b ]
 	then

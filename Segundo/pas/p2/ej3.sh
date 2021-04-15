@@ -13,13 +13,13 @@ for x in $(cat $1)
 do	
 	a=$(echo "$x" | tr -d "\n")
 
-	b=$(echo  "$x" | grep --color -o -E '[a-z]+' | tr -d "\n" | wc -c ) 
+	b=$(echo  "$x" | grep --color -o -E '[a-z]+' | tr -d "\n" | wc -m ) 
 	
-	c=$(echo  "$x" | grep --color -o -E '[A-Z]+' | tr -d "\n" | wc -c )
+	c=$(echo  "$x" | grep --color -o -E '[A-Z]+' | tr -d "\n" | wc -m )
 
-	d=$(echo  "$x" | grep --color -o -E '[0-9]+' | tr -d "\n" | wc -c )
+	d=$(echo  "$x" | grep --color -o -E '[0-9]+' | tr -d "\n" | wc -m )
 
-	e=$(echo  "$x" | grep --color -o -E '[[:punct:]]+' | tr -d "\n" | wc -c  )
+	e=$(echo  "$x" | grep --color -o -E '[[:punct:]]+' | tr -d "\n" | wc -m  )
 
 	let "sum = $b + $c + $d + $e "
 	let total=0

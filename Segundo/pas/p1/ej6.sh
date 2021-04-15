@@ -11,8 +11,10 @@ then
 	exit 1
 fi
 
+
 while read direccion #Leemos línea por línea el fichero que pasamos por línea de argumentos
 do
 	ip=$(dig $direccion +short) #Comando para resolver la ip
-	echo -e "$ip\t\t\t$direccion" #Imprimimos por pantalla la ip con su correspondiente dirección
-done < $1 #Esto se usa cuando hacemos un bucle para leer un fichero (contando con que el fichero está en $1)
+	echo -e "$ip\t\t\t$direccion" #Imprismimos por pantalla la ip con su correspondiente dirección
+done < $1 | sort -g #Esto se usa cuando hacemos un bucle para leer un fichero (contando con que el fichero está en $1)
+
