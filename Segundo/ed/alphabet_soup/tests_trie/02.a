@@ -1,0 +1,10 @@
+Has 'HOLA MUNDO' key?: yes.
+Has 'HOLA MUND' key?: no.
+Has 'HOLA MUN' key?: no.
+Has 'HOLA MU' key?: no.
+Has 'HOLA M' key?: no.
+Has 'HOLA ' key?: no.
+Has 'HOLA' key?: no.
+Has 'HOL' key?: no.
+Has 'HO' key?: no.
+Has 'H' key?: no.
