@@ -1,0 +1,11 @@
+Unfold btree ...  ok.
+Has key value 50 ?: N.
+Inserting 50 
+[ 47 [ 45 [ 16 [] [ 36 [ 32 [] [] ] [] ] ] [ 46 [] [] ] ] [ 97 [ 72 [ 50 [] [] ] [ 91 [] [] ] ] [] ] ]
+Has a current item? Y.
+Current item: 50
+Current's level is 3
+Search for key value 72 ...  found.
+Has a current item? Y.
+Current item: 72
+Current's level is 2

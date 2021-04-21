@@ -1,0 +1,8 @@
+Unfold btree ...  ok.
+[ 47 [ 45 [ 16 [] [ 36 [ 32 [] [] ] [] ] ] [ 46 [] [] ] ] [ 97 [ 72 [] [ 91 [] [] ] ] [] ] ]
+Search for key value 47 ...  found.
+Removing key 47 ok.
+Has a current item? N.
+[ 72 [ 45 [ 16 [] [ 36 [ 32 [] [] ] [] ] ] [ 46 [] [] ] ] [ 97 [ 91 [] [] ] [] ] ]
+Has key value 47 ?: N.
+Has key value 91 ?: Y.

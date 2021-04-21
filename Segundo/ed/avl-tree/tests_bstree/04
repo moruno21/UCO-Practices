@@ -1,0 +1,12 @@
+UNFOLD [ 47 [ 45 [ 16 [] [ 36 [ 32 [] [] ] [] ] ] [ 46 [] [] ] ] [ 97 [ 72 [] [ 91 [] [] ] ] [] ] ]
+HAS 50
+INSERT 50
+FOLD
+CURRENT_EXISTS
+CURRENT
+CURRENT_LEVEL
+SEARCH 72
+CURRENT_EXISTS
+CURRENT
+CURRENT_LEVEL
+

@@ -87,7 +87,7 @@ public:
     BTNode<T>::Ref right() const
     {
         //TODO
-        return this->right_;
+         return this->right_;
     }
     /** @}*/
 

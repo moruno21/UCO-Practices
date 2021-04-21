@@ -1,0 +1,11 @@
+Creating node idx 0 with item 1
+Creating node idx 1 with item 2
+Creating node idx 2 with item 3
+Node idx 2 height: 0
+Node idx 1 height: 0
+Node idx 0 height: 0
+Attaching node idx 2 as left child of node idx 0
+Attaching node idx 1 as right child of node idx 0
+Node idx 2 height: 0
+Node idx 1 height: 0
+Node idx 0 height: 1

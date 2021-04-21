@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/moruno21/Desktop/UCO-Practices/Segundo/ed/avl-tree/avltree.hpp
+cassert
+-
+exception
+-
+functional
+-
+memory
+-
+iostream
+-
+algorithm
+-
+functional
+-
+vector
+-
+
+/home/moruno21/Desktop/UCO-Practices/Segundo/ed/avl-tree/avltree_imp.hpp
+avltree.hpp
+/home/moruno21/Desktop/UCO-Practices/Segundo/ed/avl-tree/avltree.hpp
+
+/home/moruno21/Desktop/UCO-Practices/Segundo/ed/avl-tree/test_avltree.cpp
+iostream
+-
+fstream
+-
+sstream
+-
+exception
+-
+vector
+-
+valarray
+-
+avltree_imp.hpp
+/home/moruno21/Desktop/UCO-Practices/Segundo/ed/avl-tree/avltree_imp.hpp
+

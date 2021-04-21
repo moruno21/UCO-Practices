@@ -1,0 +1,8 @@
+UNFOLD [ 47 [ 45 [ 16 [] [ 36 [ 32 [] [] ] [] ] ] [ 46 [] [] ] ] [ 97 [ 72 [] [ 91 [] [] ] ] [] ] ]
+FOLD
+SEARCH 32
+REMOVE
+FOLD
+SEARCH 91
+REMOVE
+FOLD

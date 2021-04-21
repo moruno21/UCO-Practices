@@ -1,0 +1,7 @@
+UNFOLD [ 47 [ 45 [ 16 [] [ 36 [ 32 [] [] ] [] ] ] [ 46 [] [] ] ] [ 97 [ 72 [] [ 91 [] [] ] ] [] ] ]
+SEARCH 32
+CURRENT_EXISTS
+CURRENT
+CURRENT_LEVEL
+SEARCH 50
+CURRENT_EXISTS

@@ -1,0 +1,8 @@
+UNFOLD [ 47 [ 45 [ 16 [] [ 36 [ 32 [] [] ] [] ] ] [ 46 [] [] ] ] [ 97 [ 72 [] [ 91 [] [] ] ] [] ] ]
+FOLD
+SEARCH 97
+REMOVE
+CURRENT_EXISTS
+FOLD
+HAS 97
+HAS 91

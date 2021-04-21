@@ -1,0 +1,8 @@
+Unfold btree ...  ok.
+[ 47 [ 45 [ 16 [] [ 36 [ 32 [] [] ] [] ] ] [ 46 [] [] ] ] [ 97 [ 72 [] [ 91 [] [] ] ] [] ] ]
+Search for key value 32 ...  found.
+Removing key 32 ok.
+[ 47 [ 45 [ 16 [] [ 36 [] [] ] ] [ 46 [] [] ] ] [ 97 [ 72 [] [ 91 [] [] ] ] [] ] ]
+Search for key value 91 ...  found.
+Removing key 91 ok.
+[ 47 [ 45 [ 16 [] [ 36 [] [] ] ] [ 46 [] [] ] ] [ 97 [ 72 [] [] ] [] ] ]
