@@ -1,4 +1,4 @@
-71c11a19e6380cf46176f31ca1b9018f  ./CHANGELOG.txt
+9467244dfa0cfb42d0e32e1a33bbbd8d  ./CHANGELOG.txt
 7e6871a3328f0dcb8f9adb3f7cef78e9  ./alphabet_soup.cpp
 cfc7e3b9f82876a11b67fb8fa2cd9a20  ./test_alphabet_soup_solver.cpp
 994ff42d8b516ac65162d2b17d482501  ./tests_alphabet_soup/02.a
@@ -8,7 +8,6 @@ cfc7e3b9f82876a11b67fb8fa2cd9a20  ./test_alphabet_soup_solver.cpp
 43742dc3f31a0942ceba565340ffd193  ./test_trie.cpp
 21f9bd8562fc5e080e888a89fa5daca0  ./run_tests.sh
 6431a9049427a33cd1f9bfb946ef5a02  ./CMakeLists.txt
-e9bcb6f99001f687da766fc85a1fab17  ./template_soup.ods
 9ccf17b504f3816df3395c07c69514de  ./tests_trie/00
 16e1e0243c869d34a41944d2b7543772  ./tests_trie/04.a
 91efef999c08d1df5333214d0be8ceed  ./tests_trie/03

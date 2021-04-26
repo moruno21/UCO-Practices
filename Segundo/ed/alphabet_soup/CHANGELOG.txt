@@ -1,4 +1,6 @@
 1.0:
 - Start release.
+1.1:
+- Fixed file DO_NOT_MODIFY.txt.
 
 
