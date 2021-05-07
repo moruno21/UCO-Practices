@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wall -rdynamic CMakeFiles/test_trie.dir/test_trie.cpp.o CMakeFiles/test_trie.dir/trie.cpp.o -o test_trie 
