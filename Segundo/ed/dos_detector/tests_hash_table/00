@@ -1,0 +1,26 @@
+100
+hash 150.214.110.3
+hash 10.0.0.1
+insert 150.214.110.3
+insert 150.214.117.157
+insert 150.214.117.1
+insert 10.0.0.1
+insert 127.0.0.1
+insert 67.26.255.255
+insert 132.16.2.1
+insert 50.21.200.1
+find 21.21.21.21
+find 150.214.117.157
+show
+has 10.0.0.2
+has 150.214.110.3
+find 150.214.110.3
+set_value 2
+find 132.16.2.1
+is_valid
+get_key
+remove
+is_valid
+get_key
+find 132.16.2.1
+show 
