@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/moruno21/Desktop/UCO-Practices/Segundo/ed/dos_detector/dos_detector.cpp" "/home/moruno21/Desktop/UCO-Practices/Segundo/ed/dos_detector/build/CMakeFiles/test_dos_detector.dir/dos_detector.cpp.o"
-  "/home/moruno21/Desktop/UCO-Practices/Segundo/ed/dos_detector/test_dos_detector.cpp" "/home/moruno21/Desktop/UCO-Practices/Segundo/ed/dos_detector/build/CMakeFiles/test_dos_detector.dir/test_dos_detector.cpp.o"
+  "/home/moruno21/Downloads/dos_detector/dos_detector.cpp" "/home/moruno21/Downloads/dos_detector/build/CMakeFiles/test_dos_detector.dir/dos_detector.cpp.o"
+  "/home/moruno21/Downloads/dos_detector/test_dos_detector.cpp" "/home/moruno21/Downloads/dos_detector/build/CMakeFiles/test_dos_detector.dir/test_dos_detector.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

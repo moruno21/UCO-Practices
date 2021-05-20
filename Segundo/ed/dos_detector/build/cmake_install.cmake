@@ -1,4 +1,4 @@
-# Install script for directory: /home/moruno21/Desktop/UCO-Practices/Segundo/ed/dos_detector
+# Install script for directory: /home/moruno21/Downloads/dos_detector
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/moruno21/Desktop/UCO-Practices/Segundo/ed/dos_detector/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/moruno21/Downloads/dos_detector/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

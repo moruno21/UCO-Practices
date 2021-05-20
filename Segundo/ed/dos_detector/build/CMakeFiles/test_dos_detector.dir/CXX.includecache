@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/moruno21/Desktop/UCO-Practices/Segundo/ed/dos_detector/dos_detector.cpp
+/home/moruno21/Downloads/dos_detector/dos_detector.cpp
 dos_detector.hpp
-/home/moruno21/Desktop/UCO-Practices/Segundo/ed/dos_detector/dos_detector.hpp
+/home/moruno21/Downloads/dos_detector/dos_detector.hpp
 hash_table.hpp
-/home/moruno21/Desktop/UCO-Practices/Segundo/ed/dos_detector/hash_table.hpp
+/home/moruno21/Downloads/dos_detector/hash_table.hpp
 
-/home/moruno21/Desktop/UCO-Practices/Segundo/ed/dos_detector/dos_detector.hpp
+/home/moruno21/Downloads/dos_detector/dos_detector.hpp
 cstdlib
 -
 utility
@@ -20,11 +20,11 @@ utility
 vector
 -
 ip_utils.hpp
-/home/moruno21/Desktop/UCO-Practices/Segundo/ed/dos_detector/ip_utils.hpp
+/home/moruno21/Downloads/dos_detector/ip_utils.hpp
 hash_table.hpp
-/home/moruno21/Desktop/UCO-Practices/Segundo/ed/dos_detector/hash_table.hpp
+/home/moruno21/Downloads/dos_detector/hash_table.hpp
 
-/home/moruno21/Desktop/UCO-Practices/Segundo/ed/dos_detector/hash_table.hpp
+/home/moruno21/Downloads/dos_detector/hash_table.hpp
 iostream
 -
 cstdlib
@@ -42,7 +42,7 @@ utility
 memory
 -
 
-/home/moruno21/Desktop/UCO-Practices/Segundo/ed/dos_detector/ip_utils.hpp
+/home/moruno21/Downloads/dos_detector/ip_utils.hpp
 cstdint
 -
 valarray
@@ -54,7 +54,7 @@ sstream
 string
 -
 
-/home/moruno21/Desktop/UCO-Practices/Segundo/ed/dos_detector/test_dos_detector.cpp
+/home/moruno21/Downloads/dos_detector/test_dos_detector.cpp
 iostream
 -
 fstream
@@ -64,9 +64,9 @@ vector
 exception
 -
 ip_utils.hpp
-/home/moruno21/Desktop/UCO-Practices/Segundo/ed/dos_detector/ip_utils.hpp
+/home/moruno21/Downloads/dos_detector/ip_utils.hpp
 hash_table.hpp
-/home/moruno21/Desktop/UCO-Practices/Segundo/ed/dos_detector/hash_table.hpp
+/home/moruno21/Downloads/dos_detector/hash_table.hpp
 dos_detector.hpp
-/home/moruno21/Desktop/UCO-Practices/Segundo/ed/dos_detector/dos_detector.hpp
+/home/moruno21/Downloads/dos_detector/dos_detector.hpp
 

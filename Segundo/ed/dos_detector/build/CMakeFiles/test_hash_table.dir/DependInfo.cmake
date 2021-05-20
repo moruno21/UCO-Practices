@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/moruno21/Desktop/UCO-Practices/Segundo/ed/dos_detector/test_hash_table.cpp" "/home/moruno21/Desktop/UCO-Practices/Segundo/ed/dos_detector/build/CMakeFiles/test_hash_table.dir/test_hash_table.cpp.o"
+  "/home/moruno21/Downloads/dos_detector/test_hash_table.cpp" "/home/moruno21/Downloads/dos_detector/build/CMakeFiles/test_hash_table.dir/test_hash_table.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
