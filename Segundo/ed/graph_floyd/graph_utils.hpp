@@ -12,8 +12,8 @@
  * @brief A matrix of scalars.
  * The matrix is a valarray of valarray's of type T.
  */
-template<class T>
-class Matrix: public std::valarray<std::valarray<T>>
+template <class T>
+class Matrix : public std::valarray<std::valarray<T>>
 {
 public:
     /**
@@ -31,9 +31,9 @@ public:
      * @param fill_v the value used to initialize the elements.
      * @pre rows==0 || cols>0
      */
-    Matrix(size_t rows, size_t cols, const T fill_v= T(0))
+    Matrix(size_t rows, size_t cols, const T fill_v = T(0))
     {
-        assert(rows==0 || cols>0);
+        assert(rows == 0 || cols > 0);
         resize_matrix(rows, cols, fill_v);
     }
 
@@ -44,9 +44,9 @@ public:
      * @param fill_v the value used to initialize the elements.
      * @pre rows==0 || cols>0
      */
-    void resize_matrix(size_t rows, size_t cols, const T fill_v= T(0))
+    void resize_matrix(size_t rows, size_t cols, const T fill_v = T(0))
     {
-        assert(rows==0 || cols>0);
+        assert(rows == 0 || cols > 0);
         this->resize(rows, std::valarray<T>(fill_v, cols));
     }
 
@@ -74,7 +74,7 @@ public:
      */
     bool is_empty() const
     {
-        return rows()==0;
+        return rows() == 0;
     }
 };
 
@@ -84,20 +84,19 @@ public:
  * @return the modified stream.
  */
 template <class T>
-std::ostream& operator<<(std::ostream& out, Matrix<T> const& m)
+std::ostream &operator<<(std::ostream &out, Matrix<T> const &m)
 {
-    if (! m.is_empty())
+    if (!m.is_empty())
     {
         out << "[ ";
-        for (size_t r = 0; r<m.rows(); ++r)
+        for (size_t r = 0; r < m.rows(); ++r)
         {
-            out<< '[' << m[r][0];
-            for(size_t c = 1; c < m.cols(); ++c)
+            out << '[' << m[r][0];
+            for (size_t c = 1; c < m.cols(); ++c)
                 out << ',' << m[r][c];
             out << ']';
-            if (r < (m.rows()-1))
-                 out << ',' << std::endl;
-
+            if (r < (m.rows() - 1))
+                out << ',' << std::endl;
         }
         out << " ]";
     }
@@ -130,19 +129,18 @@ typedef Matrix<float> IMatrix;
  * <u_E-1> <v_E-1> <weight_E-1>
  */
 template <class T>
-bool
-fold_wgraph(std::ostream& out, WGraph<T> & g)
+bool fold_wgraph(std::ostream &out, WGraph<T> &g)
 {
     out << "DIRECTED" << std::endl;
     out << g.size() << std::endl;
-    for (size_t n=0;n<g.size();++n)
+    for (size_t n = 0; n < g.size(); ++n)
         out << g.node(n)->item() << std::endl;
-    std::vector< typename WGraph<T>::EdgeRef > edges;
+    std::vector<typename WGraph<T>::EdgeRef> edges;
     g.goto_first_node();
-    while(g.has_current_node())
+    while (g.has_current_node())
     {
         g.goto_first_edge();
-        while(g.has_current_edge())
+        while (g.has_current_edge())
         {
             edges.push_back(g.current_edge());
             g.goto_next_edge();
@@ -150,7 +148,7 @@ fold_wgraph(std::ostream& out, WGraph<T> & g)
         g.goto_next_node();
     }
     out << edges.size() << std::endl;
-    for(size_t e=0;e<edges.size();++e)
+    for (size_t e = 0; e < edges.size(); ++e)
         out << edges[e]->first()->label() << ' '
             << edges[e]->second()->label() << ' '
             << edges[e]->item() << std::endl;
@@ -181,14 +179,14 @@ fold_wgraph(std::ostream& out, WGraph<T> & g)
  * @return a reference to the graph or nullptr if input error.
  * @warning std::runtime_error("Wrong graph") is throw if bad input format.
  */
-template<class T>
+template <class T>
 std::shared_ptr<WGraph<T>> create_wgraph(std::istream &in) noexcept(false)
 {
     assert(in);
     std::shared_ptr<WGraph<T>> graph; //The returned graph.
     bool is_directed = true;
     std::string type;
-    in >> type;    
+    in >> type;
     if (type != "DIRECTED")
         is_directed = false;
 
@@ -204,8 +202,39 @@ std::shared_ptr<WGraph<T>> create_wgraph(std::istream &in) noexcept(false)
     //directed edges u-->v and v-->u.
     //If the input format is wrong, the throw std::runtime_error("Wrong graph").
 
+    size_t iterator = 0;    //Variable que usaremos para iterar
+    while (iterator < size) //Iteramos hasta que alcancemos el tamaño
+    {
+        if (!in)
+            std::runtime_error("Wrong graph"); //Si el formato es erróneo, salimos
+        T new_value;
+        in >> new_value;            //Volcamos in en el nuevo valor
+        graph->add_node(new_value); //Insertamos el nuevo valor que hemos creado arriba
+        iterator++;                 //Aumentamos la variable
+    }
 
-    //
+    size_t edges; //Numero de lados
+    in >> edges;  //Volcamos el numero de lados de in a edges
+
+    iterator = 0; //Ponemos el iterador a 0 para volver a iterar en el siguiente bucle
+    while (iterator < edges)
+    {
+        T u, v;  //Creamos estos tres valores para volcar el contenido de in
+        float w; //Creamos estos tres valores para volcar el contenido de in
+        in >> u; //Volcamos in en u
+        in >> v; //Volcamos in en v
+        in >> w; //Volcamos in en w
+
+        auto new_u = graph->find(u);
+        auto new_v = graph->find(v);
+
+        graph->set_weight(new_u, new_v, w); //Seteamos el peso
+
+        if (!is_directed) //Si no es dirigido, repetimos el paso anterior
+            graph->set_weight(graph->find(v), graph->find(u), w);
+
+        iterator++; //Aumentamos la variable con la que iteramos
+    }
     return graph;
 }
 
