@@ -1,80 +1,80 @@
 package Ej1;
-
+import java.util.Date;
 
 public class Espectaculo {
 
-	enum type{
+	public enum categoria{
 		concierto, obra, monologo
 	}
-	private String title;
-	private type type;
-	private String description;
-	private java.util.Date date;
-	private int availableTickets;
-	private int soldTickets;
+	private String titulo;
+	private categoria categoria;
+	private String descripcion;
+	private Date fecha;
+	private int localidadesDisponibles;
+	private int localidadesVendidas;
 	
 	public Espectaculo() {
 		
 	}
 	
-	public Espectaculo(String title, type type, String description ) {
-		this.title = title;
-		this.type = type;
-		this.description = description;
+	public Espectaculo(String titulo, categoria categoria, String descripcion ) {
+		this.titulo = titulo;
+		this.categoria = categoria;
+		this.descripcion = descripcion;
 	}
 	
 	
-	public String getTitle() {
-		return this.title;
+	public String getTitulo() {
+		return this.titulo;
 	}
 	
-	public type getType() {
-		return this.type;
+	public categoria getCategoria() {
+		return this.categoria;
 	}
 	
-	public String getDescription() {
-		return this.description;
+	public String getDescripcion() {
+		return this.descripcion;
 	}
 	
-	public java.util.Date getDate(){
-		return this.date;
+	public Date getFecha(){
+		return this.fecha;
 	}
 	
-	public int getAvailableTickets() {
-		return this.availableTickets;
+	public int getLocalidadesDisponibles() {
+		return this.localidadesDisponibles;
 	}
 	
-	public int getSoldTickets() {
-		return this.soldTickets;
+	public int getLocalidadesVendidas() {
+		return this.localidadesVendidas;
 	}
 	
 	
-	public void setTitle(String title) {
-		this.title = title;
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
 	}
 	
-	public void setType(type type) {
-		this.type = type;
+	public void setCategoria(categoria categoria) {
+		this.categoria = categoria;
 	}
 	
-	public void setDescription(String description) {
-		this.description = description;
+	public void setDescripcion(String descripcion) {
+		this.descripcion = descripcion;
 	}
 	
-	public void setDate(java.util.Date date) {
-		this.date = date;
+	public void setFecha(Date fecha) {
+		this.fecha = fecha;
 	}
 	
-	public void getAvailableTickets(int availableTickets) {
-		this.availableTickets = availableTickets
+	public void setLocalidadesDisponible(int localidadesDisponibles) {
+		this.localidadesDisponibles = localidadesDisponibles;
 	}
 	
-	public void getSoldTickets(int soldTickets) {
-		this.soldTickets = soldTickets;
+	public void setLocalidadesVendidas(int localidadesVendidas) {
+		this.localidadesVendidas = localidadesVendidas;
 	}
 	
 	public String toString() {
-		String info = "Title: " + this.title + " // Type: " + this.type + " // Description: " + this.description + " // Date: " + this.date + " // Available tickets: " + this.availableTickets + " // Sold tickets: " + this.soldTickets;
+		String info = "Titulo: " + this.titulo + " // Categoría: " + this.categoria + " // Descripcion: " + this.descripcion + " // Fecha: " + this.fecha + " // Localidades disponibles: " + this.localidadesDisponibles + " // Localidades vendidas: " + this.localidadesVendidas;
 		return info;
 	}
 	
