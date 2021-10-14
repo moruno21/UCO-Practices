@@ -40,7 +40,7 @@ int main ( )
 
 	sockname.sin_family = AF_INET;
 	sockname.sin_port = htons(2000);
-	sockname.sin_addr.s_addr =  INADDR_ANY;
+	sockname.sin_addr.s_addr =  INADDR_ANY; //Cualesquiera que sean las IPs de todos los interfaces de red de este ordenador
 
 	if (bind (sd, (struct sockaddr *) &sockname, sizeof (sockname)) == -1)
 	{
@@ -56,7 +56,7 @@ int main ( )
    	----------------------------------------------------------------------*/
 		from_len = sizeof (from);
 
-
+		//Prepara al socket para que pueda recibir conexiones
 		if(listen(sd,1) == -1){
 			perror("Error en la operación de listen");
 			exit(1);
@@ -66,7 +66,13 @@ int main ( )
 		El servidor acepta una petición
 	------------------------------------------------------------------------ */
 		while(1){
-		
+		// La  llamada  a  accept()  no  retornará  hasta  que  se  produce  una  conexión  o  es 
+		//interrumpida por una señal. 
+
+		//En from se almecena la info de la conxión entrante. Se utiliza para determinar que 
+		//host está llamando y desde qué número de puerto.
+
+
 			if((new_sd = accept(sd, (struct sockaddr *)&from, &from_len)) == -1){
 				perror("Error aceptando peticiones");
 				exit(1);
