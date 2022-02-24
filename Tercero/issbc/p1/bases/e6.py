@@ -1,3 +1,8 @@
+"""
+This program centers a window
+on the screen.
+"""
+
 import sys
 from PyQt5.QtWidgets import QWidget, QDesktopWidget, QApplication
 

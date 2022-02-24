@@ -1,3 +1,9 @@
+"""
+This program shows a confirmation
+message box when we click on the close
+button of the application window.
+"""
+
 import sys
 from PyQt5.QtWidgets import QWidget, QMessageBox, QApplication
 

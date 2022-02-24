@@ -1,4 +1,7 @@
-
+"""
+In this example, we create a simple
+window in PyQt5.
+"""
 import sys
 from PyQt5.QtWidgets import QApplication, QWidget
 

@@ -1,3 +1,8 @@
+"""
+This example shows an icon
+in the titlebar of the window.
+"""
+
 import sys
 from PyQt5.QtWidgets import QApplication, QWidget
 from PyQt5.QtGui import QIcon

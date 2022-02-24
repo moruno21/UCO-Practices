@@ -1,3 +1,8 @@
+"""
+This example shows a tooltip on
+a window and a button.
+"""
+
 import sys
 from PyQt5.QtWidgets import (QWidget, QToolTip,
                              QPushButton, QApplication)

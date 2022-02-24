@@ -1,3 +1,9 @@
+"""
+This program creates a quit
+button. When we press the button,
+the application terminates.
+"""
+
 import sys
 from PyQt5.QtWidgets import QWidget, QPushButton, QApplication
 
