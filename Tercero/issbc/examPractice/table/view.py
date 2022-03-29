@@ -1,6 +1,6 @@
 from select import select
 import sys
-import p3.examPractice.table.controller as ctrl
+import controller as ctrl
 
 from PyQt5.QtWidgets import QWidget, QTreeView, QFileSystemModel, QApplication, QLabel, QLineEdit, QTextEdit, QVBoxLayout, QHBoxLayout, QPushButton, QGridLayout, QTableWidget, QTableWidgetItem
 

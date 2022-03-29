@@ -1,4 +1,4 @@
-import p3.examPractice.table.model as mapp
+import model as mapp
 
 
 def eventOpenFile(self):
